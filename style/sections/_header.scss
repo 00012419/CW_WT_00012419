@@ -1,0 +1,27 @@
+header{
+    @include flex(80px);
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    padding: 0 60px;
+    h3{
+        font-size: 25px;
+        color: #1D263A;
+        span{
+            color: $color;
+        }
+    }
+    nav{
+            @include flex(50px);
+            a{
+                @include font;
+            }
+    }
+    > a{
+        @include btn(10px 15px, #1D263A);
+        color: #fff;
+    }
+
+}

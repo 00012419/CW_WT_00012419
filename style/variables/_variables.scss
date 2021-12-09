@@ -1,0 +1,16 @@
+$color: #FFCD28;
+$color1: #FF794C;
+
+$family: 'Poppins';
+
+a, p, h1, h2, h3, h4, h5, h6, span, li{
+    font-family: $family;
+}
+
+a{
+    text-decoration: none;
+}
+
+span{
+    color: $color
+}

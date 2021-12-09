@@ -1,0 +1,8 @@
+.logos{
+    @include flex(60px);
+    padding: 60px 0;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #F2F4F7;
+    margin-bottom: 100px;
+}

@@ -1,0 +1,49 @@
+main{
+    margin-bottom: 80px;
+    position: relative;
+    height: 100%;
+    @include flex(40px);
+    flex-direction: column;
+    padding: 80px;
+    background-color: #1D263A;
+    > img{
+        position: absolute;
+        right: 60px;
+        top: 0px;
+    }
+
+    h1{
+        font-size: 70px;
+        color: white;
+    }
+
+    > p{
+        @include font();
+    }
+
+    > a{
+        @include btn(20px 40px, $color);
+        width: 175px;
+        color: #1D263A;
+        font-family: $family;
+    }
+
+    .numbers{
+        @include flex(100px);
+        font-size: 48px;
+        color: #fff;
+        span{
+            color: $color;
+        }
+
+        .d930{
+            @include flex(20px);
+            flex-direction: column;
+        }
+
+        .d930 p:last-child{
+            @include font();
+        }
+        
+    }
+}

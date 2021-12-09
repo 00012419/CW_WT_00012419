@@ -1,0 +1,45 @@
+.cameras{
+    @include flex(120px);
+    position: relative;
+    background-color: #F6F8FB;
+    padding: 100px 50px;
+    
+    .infos{
+        @include flex(50px);
+        flex-direction: column;
+        
+        .home{
+            color: #FF794C;
+            font-size: 17px;
+        }
+
+        h1{
+            font-size: 40px;
+        }
+
+        .txt-pro{
+            @include font();
+        }
+    
+    }
+    .properties{
+        @include flex(50px);
+        position: absolute;
+        bottom: 20%;
+        left: 35%;
+    }
+    
+    .camera-pro{
+        padding: 30px 60px;
+        background-color: #fff; 
+        border-radius: 10px;      
+        
+        .img{
+          @include flex(10px);
+          align-items: center;  
+        }
+        ul{
+            margin-top: 20px;
+        }
+    }
+}

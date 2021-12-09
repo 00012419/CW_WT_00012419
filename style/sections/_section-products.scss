@@ -1,0 +1,64 @@
+.products{
+    background-color: #F6F8FB;
+    padding: 100px 50px;
+    position: relative;
+    .indoor{
+        @include font();
+        margin-bottom: 200px;
+    }
+
+    margin-bottom: 200px;
+
+    .camera{
+        @include flex(20px);
+        align-items: center;
+        position: absolute;
+        bottom: -50%;
+        left: 7%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .previuos{
+        position: absolute;
+        left: 0;
+        left: -20px;
+        padding: 13px 15px;
+        background-color: #fff;
+        border-radius: 5px;
+        border: 1px solid grey;
+    }
+    .next{
+        position: absolute;
+        right: -20px;
+        padding: 13px 15px;
+        background-color: $color;
+        border-radius: 5px;
+        border: 1px solid grey;
+    }
+    
+
+    .camera > div > div > img{
+        background-color: #F0F2F5;
+    }
+
+    .camera > div > div > .info{
+        @include flex(10px);
+        flex-direction: column;
+        align-self: flex-start;
+        margin-top: 20px;
+
+        p{
+            @include font();
+        }
+
+        h5{
+            @include flex(3px);
+            color: #FF794C;
+            align-items: center;
+        }
+    }
+
+}

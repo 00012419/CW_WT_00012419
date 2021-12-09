@@ -1,0 +1,56 @@
+.reason{
+    @include flex(20px);
+    flex-direction: column;
+    padding: 50px;
+    background-color: #fff;
+    border: 1px solid grey;
+
+    h1{
+        @include bold-font(40px);
+    }
+
+    > p{
+        @include font();
+    }
+
+    .pre-next{
+        @include flex(20px);
+        align-self: flex-end;
+
+        img{
+            border-radius: 5px;
+            padding: 13px 15px;
+            background-color: #FFFFFF;
+            border: 1px solid grey;
+        }
+
+        img:last-child{
+            background-color: $color;
+        }
+
+    }
+
+    .features{
+        @include flex(30px);
+
+        .reliable{
+            @include flex(20px);
+            position: relative;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 30px;
+            background-color: #F0F2F5;
+
+            p{
+                @include font();
+            }
+
+            h5{
+                @include flex(3px);
+                color: #FF794C;
+                align-items: center;
+            }
+        }
+    }
+
+}

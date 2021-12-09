@@ -1,0 +1,35 @@
+@mixin bold-font ($fsize: 48px) {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: $fsize;
+    line-height: 58px;
+    color: #000;
+}
+
+@mixin small-font {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+    letter-spacing: 2px;
+    color: #FF794C;
+}
+
+@mixin flex ($gap){
+    display: flex;
+    flex-direction: row;
+    gap: $gap;
+};
+
+@mixin font {
+    color: #D6D6D6;
+    font-size: 18px;
+};
+
+@mixin btn($padding, $color) {
+    background-color: $color;
+    padding: $padding;
+    border-radius: 8px;
+};

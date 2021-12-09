@@ -1,0 +1,47 @@
+.whoWe{
+    @include flex(20px);
+    align-items: center;
+    margin-top: 500px;
+    margin-bottom: 200px;
+
+    .txt{
+      @include flex(25px);
+      flex-direction: column;
+      margin-left: 40px;
+      
+      .about{
+          @include small-font();
+      }
+
+      p{
+          @include font();
+      }
+
+      .Who{
+          @include bold-font(40px);
+      }
+
+      button{
+          @include btn(20px 40px, $color);
+          width: 165px;
+          border: none;
+          border-radius: 7px;
+
+      }
+    }
+
+    .label-1080{
+        position: relative;
+
+        p{
+            @include small-font();
+            position: absolute;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            top: 10px;
+            left: 10px;
+
+        }
+    }
+}
